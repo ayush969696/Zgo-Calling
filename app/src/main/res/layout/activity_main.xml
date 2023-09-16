@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bkg"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/linearlayourGone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="22dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/video"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let's get Started"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:id="@+id/signupText"
+                android:textColor="@color/lavender"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/nameInput"
+                android:background="@drawable/rounded_cornor"
+                android:drawablePadding="8dp"
+                android:hint="Enter Your Name "
+                android:drawableLeft="@drawable/ic_person"
+                android:inputType="text"
+                android:padding="8dp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="40dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/meetingId"
+                android:background="@drawable/rounded_cornor"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_connteacter"
+                android:hint="Meeting ID"
+                android:padding="8dp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:fontFamily="serif"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/joinBtn"
+                android:text="Join a meeting"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:textSize="22sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/lavender"
+                app:cornerRadius = "10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/createBtn"
+                android:text="Create new meeting"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:textSize="22sp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/lavender"
+                app:cornerRadius = "10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
